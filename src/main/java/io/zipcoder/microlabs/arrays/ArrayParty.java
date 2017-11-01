@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class ArrayParty {
 
+
     public String printArray(String[] inputArray) {
 
         String printedFromArray = "*** Output ***";
@@ -32,7 +33,7 @@ public class ArrayParty {
 
         String printedFromArray = "*** Output ***\n";
         String lastInput = inputArray[inputArray.length - 2].toString();
-        ;
+
         printedFromArray += lastInput;
 
         return printedFromArray;
@@ -57,6 +58,7 @@ public class ArrayParty {
 
     public boolean isPalindromicArray(String[] inputArray) {
 
+
         String printedFromArray = "*** Output ***";
         int length = inputArray.length;
         boolean temp = false;
@@ -72,6 +74,18 @@ public class ArrayParty {
 
 
         return temp;
+
+    }
+
+
+    public String consequativeDuplicates(int[] inputArray) {
+
+        String printedFromArray = "*** Output ***" + "\n" + inputArray[0];
+        for (int i = 1; i < inputArray.length; i++)
+            if (inputArray[i] != inputArray[i - 1])
+                printedFromArray += "\n" + inputArray[i];
+
+        return printedFromArray;
 
     }
 
@@ -93,7 +107,7 @@ public class ArrayParty {
 
     public String packDuplicates(char[] inputArray) {
 
-        String packedDuplicates = "*** Output ***\n" +Character.toString(inputArray[0]);
+        String packedDuplicates = "*** Output ***\n" + Character.toString(inputArray[0]);
         for (int i = 1; i < inputArray.length; i++) {
             if (inputArray[i] != inputArray[i - 1]) {
                 packedDuplicates += "," + Character.toString(inputArray[i]);
@@ -103,16 +117,6 @@ public class ArrayParty {
 
         }
         return packedDuplicates;
-
-        //TODO Define the method lastButOne
-
-        //TODO Define the method reverse
-
-        //TODO Define the method isPalindrome
-
-        //TODO Define the method compress
-
-        //TODO Define the method pack
 
 
     }
