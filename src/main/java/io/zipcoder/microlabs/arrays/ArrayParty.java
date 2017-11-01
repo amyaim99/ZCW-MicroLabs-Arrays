@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class ArrayParty {
 
 
+
     public String printArray(String[] inputArray) {
 
         String printedFromArray = "*** Output ***";
@@ -59,6 +60,8 @@ public class ArrayParty {
     public boolean isPalindromicArray(String[] inputArray) {
 
 
+
+
         String printedFromArray = "*** Output ***";
         int length = inputArray.length;
         boolean temp = false;
@@ -78,12 +81,12 @@ public class ArrayParty {
     }
 
 
-    public String consequativeDuplicates(int[] inputArray) {
+    public String consequativeDuplicates (int[] inputArray){
 
         String printedFromArray = "*** Output ***" + "\n" + inputArray[0];
-        for (int i = 1; i < inputArray.length; i++)
-            if (inputArray[i] != inputArray[i - 1])
-                printedFromArray += "\n" + inputArray[i];
+        for (int i =1; i<inputArray.length; i++)
+            if (inputArray[i]!=inputArray[i-1])
+                printedFromArray+="\n" +inputArray[i];
 
         return printedFromArray;
 
@@ -117,6 +120,7 @@ public class ArrayParty {
 
         }
         return packedDuplicates;
+
 
 
     }
